@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#111111;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF5A59;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#C93332;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="roundedClip">
+      <rect width="1024" height="1024" rx="224" ry="224"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" rx="224" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid texture lines -->
+  <line x1="0" y1="512" x2="1024" y2="512" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.03"/>
+  <line x1="512" y1="0" x2="512" y2="1024" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.03"/>
+
+  <!-- Film strip LEFT vertical bar -->
+  <rect x="148" y="280" width="52" height="464" rx="14" fill="#1c1c1c"/>
+  <rect x="158" y="298" width="32" height="48" rx="8" fill="#0a0a0a"/>
+  <rect x="158" y="362" width="32" height="48" rx="8" fill="#0a0a0a"/>
+  <rect x="158" y="426" width="32" height="48" rx="8" fill="#0a0a0a"/>
+  <rect x="158" y="490" width="32" height="48" rx="8" fill="#0a0a0a"/>
+  <rect x="158" y="554" width="32" height="48" rx="8" fill="#0a0a0a"/>
+  <rect x="158" y="618" width="32" height="48" rx="8" fill="#0a0a0a"/>
+  <rect x="158" y="682" width="32" height="48" rx="8" fill="#0a0a0a"/>
+
+  <!-- Film strip RIGHT vertical bar -->
+  <rect x="824" y="280" width="52" height="464" rx="14" fill="#1c1c1c"/>
+  <rect x="834" y="298" width="32" height="48" rx="8" fill="#0a0a0a"/>
+  <rect x="834" y="362" width="32" height="48" rx="8" fill="#0a0a0a"/>
+  <rect x="834" y="426" width="32" height="48" rx="8" fill="#0a0a0a"/>
+  <rect x="834" y="490" width="32" height="48" rx="8" fill="#0a0a0a"/>
+  <rect x="834" y="554" width="32" height="48" rx="8" fill="#0a0a0a"/>
+  <rect x="834" y="618" width="32" height="48" rx="8" fill="#0a0a0a"/>
+  <rect x="834" y="682" width="32" height="48" rx="8" fill="#0a0a0a"/>
+
+  <!-- Outer ring -->
+  <circle cx="512" cy="430" r="210" fill="#161616" stroke="#2a2a2a" stroke-width="2"/>
+
+  <!-- Green swipe-right arc (top) -->
+  <path d="M 340 270 Q 512 190 684 270" stroke="#22C55E" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- Green arrow head -->
+  <polygon points="684,248 684,294 722,271" fill="#22C55E"/>
+
+  <!-- Red swipe-left arc (bottom) -->
+  <path d="M 684 590 Q 512 670 340 590" stroke="#E24B4A" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- Red arrow head -->
+  <polygon points="340,568 340,614 302,591" fill="#E24B4A"/>
+
+  <!-- Main red circle -->
+  <circle cx="512" cy="430" r="138" fill="url(#redGrad)"/>
+
+  <!-- Play triangle -->
+  <polygon points="480,360 480,500 600,430" fill="#ffffff"/>
+
+  <!-- Wordmark: Cine -->
+  <text x="180" y="720" font-family="Arial Black, Arial, sans-serif" font-size="148" font-weight="900" fill="#ffffff" letter-spacing="-4">Cine</text>
+  <!-- Wordmark: Swipe -->
+  <text x="494" y="720" font-family="Arial Black, Arial, sans-serif" font-size="148" font-weight="900" fill="#E24B4A" letter-spacing="-4">Swipe</text>
+
+  <!-- Tagline -->
+  <text x="512" y="810" font-family="Arial, sans-serif" font-size="36" font-weight="400" fill="#444444" text-anchor="middle" letter-spacing="8">DISCOVER · SWIPE · WATCH</text>
+
+</svg>

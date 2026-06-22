@@ -1,0 +1,62 @@
+name: flutter_application_1
+description: "CineSwipe — a cinematic movie discovery app. Swipe right to save, left to skip."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management
+  flutter_riverpod: ^2.6.1
+
+  # Networking
+  dio: ^5.7.0
+
+  # Image caching
+  cached_network_image: ^3.4.1
+
+  # Local persistence
+  shared_preferences: ^2.3.3
+
+  # Hashing the email+password into an opaque cloud-backup key
+  crypto: ^3.0.6
+
+  # Environment variables / API key
+  flutter_dotenv: ^5.2.1
+
+  # Loading shimmer
+  shimmer: ^3.0.0
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+  # Generates launcher icons from the CineSwipe logo.
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+
+# Run: dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  web:
+    generate: true
+    background_color: "#0A0A0A"
+    theme_color: "#0A0A0A"
+  image_path: "assets/images/cineswipe_logo.png"
+  adaptive_icon_background: "#0A0A0A"
+  adaptive_icon_foreground: "assets/images/cineswipe_logo.png"
+  remove_alpha_ios: true
